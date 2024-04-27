@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // tim max thu 2 : [1,2,3,4,4,5,5,5] => 4
+    let arr = [1, 2, 3, 4, 4, 5, 5, 5];
+    let SecondLargest = maxSecond(arr);
+    function maxSecond(arr){
+        arr.sort(function(a,b){
+            return b-a ;
+        })
+        for (let i = 0; i <arr.length; i++) {
+            if(arr[i]<arr[i-1]){
+                return arr[i] ;
+            }
+
+    }
+    }
+    document.write('Max second largest: '+SecondLargest);
+
+
+</script>
+</body>
+</html>

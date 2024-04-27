@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isIncreasing(arr) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] >= arr[i + 1]) {
+                return false; // Nếu phát hiện số không đúng thứ tự, trả về false
+            }
+        }
+        return true; // Nếu mảng luôn tăng dần, trả về true
+    }
+
+    let arr1 = [1,2,3,4,6];
+    let arr2 = [1,2,3,2,4,6];
+
+    document.write("Mảng arr1 có luôn tăng dần không? ", isIncreasing(arr1)+'<br>');
+    document.write("Mảng arr2 có luôn tăng dần không? ", isIncreasing(arr2));
+</script>
+</body>
+</html>
